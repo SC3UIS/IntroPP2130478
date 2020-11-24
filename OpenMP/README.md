@@ -1,1 +1,1 @@
-dawdwad
+descripcion del primer parcial.
