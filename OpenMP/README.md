@@ -1,11 +1,11 @@
 # OpenMP
 Este folder contiene los siguientes archivos:
--PascalTriangle.c : este archivo contiene codigo en c para imprimir triangulos de pascal.
--omp_PascalTriangle.c : este archivo contiene la version paralela del archivo anterior.
--PascalTriangle : este archivo es el ejectuble que resulta de la compilacion de omp_PascalTriangle.c.
--PascalTriangle.sbatch : este archivo es un script que permite lanzar el archivo anterior a guane.
--PascalTriangle.txt : este archivo contiene los resultados de haber lanzado el ejecutable a guane.
--Readme.md : el presente archivo. 
+-PascalTriangle.c : este archivo contiene codigo en c para imprimir triangulos de pascal
+-omp_PascalTriangle.c : este archivo contiene la version paralela del archivo anterior
+-PascalTriangle : este archivo es el ejectuble que resulta de la compilacion de omp_PascalTriangle.c
+-PascalTriangle.sbatch : este archivo es un script que permite lanzar el archivo anterior a guane
+-PascalTriangle.txt : este archivo contiene los resultados de haber lanzado el ejecutable a guane
+-Readme.md : el presente archivo
 
 ## Descripcion general del codigo:
 Para imprimir un triangulo de pascal con n filas, se rquieren basicamente 3 bucles for: uno que itera sobre n que a su vez esta constituido
