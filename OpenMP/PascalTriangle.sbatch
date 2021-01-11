@@ -19,4 +19,4 @@ if [ -n "$SLURM_CPUS_PER_TASK" ]; then
     
     export OMP_NUM_THREADS=$omp_threads
      
-     ./PascalTriangle
+./PascalTriangle 1000000000
