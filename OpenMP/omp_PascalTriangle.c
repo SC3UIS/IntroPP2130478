@@ -1,17 +1,10 @@
 /*
-
   Purpose:
-
     omp_PascalTriangle is a code that allow display a pascal's trinagle given the numbers of rows of such triangle.
-
   Licensing:
-
     This code is distributed under the GNU LGPL license.
-
   Modified:
-
     24 November 2020
-
   Author:
   w3resource
   OpenMP Modification:
@@ -20,10 +13,10 @@
 */
 #include <stdio.h>
 #include <omp.h>
-void main()
+#include<stdlib.h>
+void printPascalTriangle(int n)
 {
-   int no_row=15,c=1,blk,i,j;   /*the pascal triangle will have 15 rows*/
-  
+   int no_row=n,c=1,blk,i,j; /*the pascal triangle will have n rows*/
    /*main for loop parallelization*/
    #pragma omp parallel for ordered
    for(i=0;i<no_row;i++)
@@ -54,4 +47,13 @@ void main()
     }
     /*main for loop parallelization*/
 
+}
+
+int main(int argc, char *argv[])
+{
+    int p;
+    p=strtol(argv[1], NULL, 10);
+    printf("the following pascal triangle has %d rows: \n",p);
+    printPascalTriangle(p);
+    return 0;
 }
