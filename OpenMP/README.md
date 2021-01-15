@@ -18,6 +18,6 @@ usando la 'clause' ordered.
  se permitia imprimir un triangulo de pascal con un numero cualquiera de filas.
 
 -Guane:luego de compilarlo con gcc y generado el ejecutable, se uso el script PascalTriangle.sbatch para correrlo en el clauster.Esta
- ejecucion se imprime por defecto un triangulo de pascal de 15 filas.   
+ ejecucion se imprime por un triangulo de pascal de X filas.   
 
  
