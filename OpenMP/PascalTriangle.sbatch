@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --partition=normal  # Nombre de la particion - Los nombres se obtienen con el comando sinfo
+#SBATCH --partition=guane_24_cores  # Nombre de la particion - Los nombres se obtienen con el comando sinfo
 #SBATCH --job-name=OpenMP   # Nombre de la tarea a ejecutar - puede ser cualquiera
 #SBATCH --nodes=1           # Cantidad de nodos a usar
 #SBATCH --ntasks=1          # Numero de tareas a ejecutar
@@ -19,4 +19,4 @@ if [ -n "$SLURM_CPUS_PER_TASK" ]; then
     
     export OMP_NUM_THREADS=$omp_threads
      
-./omp_PascalTriangle 1000000000
+./omp_PascalTriangle 1000000
