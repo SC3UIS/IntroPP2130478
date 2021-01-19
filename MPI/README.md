@@ -1,4 +1,4 @@
-# OpenMP
+# MPI
 Este folder contiene los siguientes archivos:
 -PascalTriangle.c : este archivo contiene codigo en c para imprimir triangulos de pascal
 -omp_PascalTriangle.c : este archivo contiene la version paralela del archivo anterior
