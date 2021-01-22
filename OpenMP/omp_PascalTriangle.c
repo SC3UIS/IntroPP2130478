@@ -14,9 +14,9 @@
 #include <stdio.h>
 #include <omp.h>
 #include<stdlib.h>
-void printPascalTriangle(int n)
+void printPascalTriangle(long int n)
 {
-   int no_row=n,c=1,blk,i,j; /*the pascal triangle will have n rows*/
+   long int no_row=n,c=1,blk,i,j; /*the pascal triangle will have n rows*/
    /*main for loop parallelization*/
    #pragma omp parallel for ordered
    for(i=0;i<no_row;i++)
@@ -51,7 +51,7 @@ void printPascalTriangle(int n)
 
 int main(int argc, char *argv[])
 {
-    int p;
+    long int p;
     p=strtol(argv[1], NULL, 10);
     printf("the following pascal triangle has %d rows: \n",p);
     printPascalTriangle(p);
