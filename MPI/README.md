@@ -1,7 +1,7 @@
 # MPI
 Este folder contiene los siguientes archivos:
 -PascalTriangle.c : este archivo contiene codigo en c para imprimir triangulos de pascal
--omp_PascalTriangle.c : este archivo contiene la version paralela del archivo anterior
+-mpi_PascalTriangle.c : este archivo contiene la version paralela del archivo anterior
 -mpi_PascalTriangle : este archivo es el ejectuble que resulta de la compilacion de mpi_PascalTriangle.c
 -PascalTriangle.sbatch : este archivo es un script que permite lanzar el archivo anterior a guane.
 -mpi_PascalTriangle.out : este archivo contiene los resultados de haber lanzado el ejecutable a guane.
