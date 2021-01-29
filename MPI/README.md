@@ -5,6 +5,8 @@ Este folder contiene los siguientes archivos:
 -mpi_PascalTriangle : este archivo es el ejectuble que resulta de la compilacion de mpi_PascalTriangle.c
 -PascalTriangle.sbatch : este archivo es un script que permite lanzar el archivo anterior a guane.
 -output_PascalTriangle.out : este archivo contiene los resultados de haber lanzado el ejecutable a guane.
+-Comparacion.sbatch : permite ejecutar en guane el codigo en mpi, secuencial y openmp para comparar tiempos de ejecucion.
+-tiempos.txt : archivo que contiene los diferentes tiempos de ejecucion en el sigueinte orden: secuencial, openmp y mpi.
 -Readme.md : el presente archivo. 
 
 ## Descripcion general del codigo:
