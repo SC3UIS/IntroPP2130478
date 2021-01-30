@@ -14,4 +14,5 @@
 
 
 module load devtools/mpi/openmpi/3.1.4
-mpirun -np 4 mpi_PascalTriangle 30
+mpirun -np 4 mpi_PascalTriangle 100
+
