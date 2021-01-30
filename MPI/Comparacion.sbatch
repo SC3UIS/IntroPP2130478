@@ -16,7 +16,7 @@ module load devtools/mpi/openmpi/3.1.4
 module load devtools/gcc/6.2.0
 
 
-time ./s_PascalTriangle 1000
-time ./omp_PascalTriangle 1000
-time mpirun -np 4 mpi_PascalTriangle 1000
+time ./s_PascalTriangle 100
+time ./omp_PascalTriangle 100
+time mpirun -np 4 mpi_PascalTriangle 100
 
