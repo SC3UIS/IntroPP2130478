@@ -20,8 +20,8 @@
 #define worker_2 2
 #define worker_3 3
 
-void compute_rows(long int start,long int end,long int n_rows){
-   long int i,blk,j,c=1;
+void compute_rows(long int start, long int end, long int n_rows){
+   long long int i,blk,j,c=1;
    for(i=start;i<end;i++)
      {
         for(blk=1;blk<=n_rows-i;blk++) printf("  ");
