@@ -24,7 +24,9 @@ En otras palabras el computo de n filas del triangulo de pascal que se quieran h
 ## Ejecucion:
 -No fue posible ejecturarlo en local.
 
--Guane:luego de compilarlo con mpicc y generado el ejecutable, se uso el script PascalTriangle.sbatch para correrlo en el clauster.Esta
- ejecucion se imprime un triangulo de pascal de n filas.   
+-Guane:luego de compilarlo con mpicc y generado el ejecutable, se uso el script PascalTriangle.sbatch para correrlo en el clauster. Esta
+ ejecucion se imprime un triangulo de pascal de n filas. 
+ 
+ -Para este ejercicio se contruyeron triangulos de pascal de 100 filas. 
 
  
