@@ -20,7 +20,5 @@ if [ -n "$SLURM_CPUS_PER_TASK" ]; then
     
     export OMP_NUM_THREADS=$omp_threads
 
-printf "Informacion sobre el mes de febrero, marzo y abril de 2021 respectivamente :\n"
-time mpirun -np 3 mpi_pico_cedula_parte_1 0 28 0 31 3 30
-time mpirun -np 3 mpi_pico_cedula_parte_2 leer.txt
+time mpirun -np 3 mpi_pico_cedula leer.txt
 
