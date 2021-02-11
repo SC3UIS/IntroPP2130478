@@ -14,5 +14,5 @@
 
 
 module load devtools/mpi/openmpi/3.1.4
-time mpirun -np 3 mpi_pico_cedula leer.txt
+time mpirun -np 4 mpi_pico_cedula leer.txt
 
