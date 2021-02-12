@@ -7,7 +7,7 @@
 
 #SBATCH --job-name=pyc
 #SBATCH --output=resultados.txt
-#SBATCH --error=error.txt
+#SBATCH --error=tiempo.txt
 
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=bassbeat120@hotmail.com
