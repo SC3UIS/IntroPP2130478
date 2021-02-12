@@ -227,7 +227,7 @@ void main(int argc, char *argv[]){
         bool eof=true;
         
         while(eof){
-          MPI_File_read_all(fileToread,digito,1,MPI_CHAR,&status);
+          MPI_File_read(fileToread,digito,1,MPI_CHAR,&status);
           if(digito[0]==102) break;
           //-------------------jugar con digito[0]-------------------------------------------------------
           if(digito[0]!=10){ //control de terminacion de una linea de filename
