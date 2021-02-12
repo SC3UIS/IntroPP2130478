@@ -5,9 +5,9 @@
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=2
 
-#SBATCH --job-name=pc
+#SBATCH --job-name=pyc
 #SBATCH --output=resultados.txt
-#SBATCH --error=erroe.err
+#SBATCH --error=error.txt
 
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=bassbeat120@hotmail.com
