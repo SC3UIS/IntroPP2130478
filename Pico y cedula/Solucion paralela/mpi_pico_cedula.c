@@ -266,7 +266,7 @@ void main(int argc, char *argv[]){
         for(j=0;j<10;j++) printf ("cedulas con %d digitos: %d\n",j+1,num_digitos_par[j]); 
         printf("\n");
         printf ("las cuentas sobre las cedulas impares son las siguientes: \n");
-        for(k=0;k<10;k++) printf ("cedulas con %d digitos: %d\n",k+1,num_digitos_par[k]); 
+        for(k=0;k<10;k++) printf ("cedulas con %d digitos: %d\n",k+1,num_digitos_impar[k]); 
         printf("\n");
         printf ("numero de cedulas pares: %d\n",num_cedulas_par);
         printf ("numero de cedulas impares: %d\n",num_cedulas_impar);
