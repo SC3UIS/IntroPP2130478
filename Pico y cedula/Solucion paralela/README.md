@@ -13,4 +13,13 @@ Las medidas de aislamiento y restricción de movilidad se han debido endurecer e
 
 ## Solucion
 Para la realizacion del diseño en paralelo se definieron primero 5 tareas: contar dias pares e impares mes 1, contar dias pares e impares mes 2, contar dias pares e impares mes 3, contar cedulas pares e impares y los numeros de digitos en estas y la impresion de las cuentas. Una vez definidas estas tareas se procedio a distribuirla sobre 4 procesos usando MPI:
-- 
+
+- proceso master:este proceso realiza lo siguiente:
+   - le asigna a los otros tres procesos las tareas de contar dias pares e impares mes 1, contar dias pares e impares mes 2 y contar dias pares e impares mes 3.
+   - cuenta cedulas pares e impares y los numeros de digitos en estas.
+   - recibe el resultado devulto por los otros 3 procesos.
+   - imprime los resultados de todos los procesos incluyendose.
+   
+- proceso worker 1:  cuenta los dias pares e impares mes 1, y luego le envia los resultados al proceso master.
+- proceso worker 2:  cuenta los dias pares e impares mes 2, y luego le envia los resultados al proceso master.
+- proceso worker 3:  cuenta los dias pares e impares mes 3, y luego le envia los resultados al proceso master.
