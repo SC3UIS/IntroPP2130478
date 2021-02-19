@@ -28,7 +28,7 @@ Para la realizacion del diseño en paralelo se definieron primero 5 tareas: cont
 - Esta solucion no es escalable ya que requiere estrictamente de 4 procesos, ni mas ni menos.
 - Esta solucion con respecto a una secuencial se acelera de la siguiente manera: sea x1 el tiempo para ejecutar proceso  worker 1, x2 el tiempo para ejecutar  proceso worker 2, x3 el tiempo para ejecutar proceso worker 3, z el tiempo gastado en el mensajeo entre procesos, m el tiempo gastado en contar cedulas pares e impares y los numeros de digitos en estas y r el tiempo para imprimir. Dado lo anterior se tiene que:
   - El tiempo de ejecucion de la solucion secuencial seria x1 + x2 + x3 + m + r 
-  - El tiempo de ejecucion de la solucion paralela seria el mayor tiempo gastado entre x1,x2 y x3 + m + r + z; sabiendo que para esta solucion z es pequeño ya que no se requiere mucho mensaje entre procesos.
+  - El tiempo de ejecucion de la solucion paralela seria el mayor tiempo gastado entre x1,x2 y x3 + m + r + z; sabiendo que para esta solucion z es pequeño ya que no se requiere mucho mensajeo entre procesos.
 
 
 ## Compilacion y ejecucion
