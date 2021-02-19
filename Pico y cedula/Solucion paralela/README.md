@@ -1,21 +1,16 @@
-# OpenMP
-Este folder contiene los siguientes archivos:
--PascalTriangle.c : este archivo contiene codigo en c para imprimir triangulos de pascal
--omp_PascalTriangle.c : este archivo contiene la version paralela del archivo anterior
--PascalTriangle : este archivo es el ejectuble que resulta de la compilacion de omp_PascalTriangle.c
--PascalTriangle.sbatch : este archivo es un script que permite lanzar el archivo anterior a guane
--PascalTriangle.txt : este archivo contiene los resultados de haber lanzado el ejecutable a guane
--Readme.md : el presente archivo
+# Pico y cedula
+Las medidas de aislamiento y restricción de movilidad se han debido endurecer en los siguientes seis meses, debido a los problemas asociados con la deficiente atención médica, la vulnerabilidad de la población en términos sanitarios y aspectos culturales. Teniendo en cuenta que se tomó la decision de implementar un pico y cédula estricto observando el último dígito de la cédula (dia par = cédula que termina en cero y par, dia impar = cédula que termina en número impar), y utilizando un archivo que contiene los números de cédula para una población especifica obtenido del último censo electoral de 2019, responda las siguientes preguntas:
 
-## Descripcion general del codigo:
-Para imprimir un triangulo de pascal con n filas, se rquieren basicamente 3 bucles for: uno que itera sobre n que a su vez esta constituido
-por otros dos bucles for(uno para imprimir espacios en blancos y otro para calcular e imprimir los numeros de cada fila). Para
-paralelizar el codigo se definieron tres regiones paralelas (una por cada bucle for),que luego de ejecutarse se ordenaron sus resultados
-usando la 'clause' ordered.
+-¿ Cuántas personas con cédula par e impar saldrían en cada dia correspondiente para su pico y cédula de los meses de febrero, marzo y abril? (Tenga en cuenta que cada mes tiene dias diferentes y asignaciones de fecha por dia diferentes).
 
-## Ejecucion:
--Local: Se uso una maquina virtual con 3 procesadores y con Debian.Para compilarlo se uso gcc, y para su ejecucion (usando el comando ./)
- se permitia imprimir un triangulo de pascal con un numero cualquiera de filas.
+-¿Cuántas veces las personas con pico y cédula par, pueden salir sin restricción los dias sábado?.
 
--Guane:luego de compilarlo con gcc y generado el ejecutable, se uso el script PascalTriangle.sbatch para correrlo en el clauster.Esta
- ejecucion se imprime por un triangulo de pascal de X filas.   
+-¿Cuántas personas con pico y cédula impar pueden salir sin restricción los dias domingo?.
+
+-Las personas con cédula de identificación de 10 dígitos son personas de 18 a 20 años. ¿Cuántas son y cómo es la distribución de salida por mes los fines de semana?
+
+-Proporcione datos para dar información de análisis a los tomadores de decisiones políticos y ver si es proporcional y justa la medida del pico y cédula para esa población, observando números pares e impares, tomando, la población en general (cantidad total de habitantes), personas de menos de 20 años (cédulas con diez cifras), personas de mayores de 60 años (Entre 6 y 7 cifras) y extranjeros (cédulas con menos de 7 cifras).
+
+## Solucion
+Para la realizacion del diseño en paralelo se definieron primero 5 tareas: contar dias pares e impares mes 1, contar dias pares e impares mes 2, contar dias pares e impares mes 3, contar cedulas pares e impares y los numeros de digitos en estas y la impresion de las cuentas. Una vez definidas estas tareas se procedio a distribuirla sobre 4 procesos usando MPI:
+- 
