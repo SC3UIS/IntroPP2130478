@@ -17,7 +17,7 @@ Para la realizacion del diseño en paralelo se definieron primero 5 tareas: cont
 - proceso master:este proceso realiza lo siguiente:
    - le asigna a los otros tres procesos las tareas de contar dias pares e impares mes 1, contar dias pares e impares mes 2 y contar dias pares e impares mes 3.
    - cuenta cedulas pares e impares y los numeros de digitos en estas.
-   - recibe el resultado devulto por los otros 3 procesos.
+   - recibe el resultado devuelto por los otros 3 procesos.
    - imprime los resultados de todos los procesos incluyendose.
    
 - proceso worker 1:  cuenta los dias pares e impares mes 1, y luego le envia los resultados al proceso master.
