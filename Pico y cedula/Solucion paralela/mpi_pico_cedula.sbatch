@@ -12,7 +12,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=bassbeat120@hotmail.com
 
-
+python convert.py 
 module load devtools/mpi/openmpi/3.1.4
 time mpirun -np 4 mpi_pico_cedula Cedulas.txt
 
